@@ -21,6 +21,7 @@ export default function Contact({ track, otherTrack, setMode }) {
         <div className="socials">
           <a href={site.github} target="_blank" rel="noopener">GitHub</a>
           <a href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+          <a href={site.portfolio} target="_blank" rel="noopener">More about Nick</a>
         </div>
       </div>
     </section>

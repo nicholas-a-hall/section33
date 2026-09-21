@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" role="img" aria-labelledby="title desc">
+  <title id="title">Problem to system to outcome</title>
+  <desc id="desc">A schematic showing recurring pain becoming a reusable system and then a better outcome.</desc>
+  <defs>
+    <linearGradient id="line" x1="0" x2="1"><stop offset="0" stop-color="#f2b84b"/><stop offset="1" stop-color="#5ad7e8"/></linearGradient>
+    <clipPath id="pso-one"><rect x="60" y="96" width="230" height="128" rx="16"/></clipPath>
+    <clipPath id="pso-two"><rect x="365" y="96" width="230" height="128" rx="16"/></clipPath>
+    <clipPath id="pso-three"><rect x="670" y="96" width="230" height="128" rx="16"/></clipPath>
+  </defs>
+  <rect width="960" height="320" rx="24" fill="#0b1117"/>
+  <g fill="none" stroke="#26323d" stroke-width="1"><path d="M0 80H960M0 160H960M0 240H960"/><path d="M120 0V320M240 0V320M360 0V320M480 0V320M600 0V320M720 0V320M840 0V320"/></g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#8593a0" letter-spacing="1.8">
+    <text x="74" y="62">01 / RECURRING PAIN</text><text x="388" y="62">02 / LEVERAGE</text><text x="697" y="62">03 / OUTCOME</text>
+  </g>
+  <g>
+    <rect x="60" y="96" width="230" height="128" rx="16" fill="#111b24" stroke="#f2b84b" stroke-width="2"/>
+    <circle cx="94" cy="132" r="7" fill="#f2b84b"/><circle cx="121" cy="132" r="7" fill="#f2b84b" opacity=".55"/><circle cx="148" cy="132" r="7" fill="#f2b84b" opacity=".25"/>
+    <text x="175" y="174" text-anchor="middle" clip-path="url(#pso-one)" fill="#f3f5f7" font-size="22" font-family="system-ui, sans-serif">Same problem.</text>
+    <text x="175" y="204" text-anchor="middle" clip-path="url(#pso-one)" fill="#a6b1bb" font-size="17" font-family="system-ui, sans-serif">Again and again.</text>
+
+    <rect x="365" y="96" width="230" height="128" rx="16" fill="#111b24" stroke="url(#line)" stroke-width="2"/>
+    <path d="M407 150h42m18 0h84M449 122v56m34-56v56m34-56v56" stroke="#5ad7e8" stroke-width="2" opacity=".9"/>
+    <circle cx="449" cy="150" r="8" fill="#0b1117" stroke="#5ad7e8" stroke-width="2"/><circle cx="483" cy="150" r="8" fill="#0b1117" stroke="#5ad7e8" stroke-width="2"/><circle cx="517" cy="150" r="8" fill="#0b1117" stroke="#5ad7e8" stroke-width="2"/>
+    <text x="480" y="204" text-anchor="middle" clip-path="url(#pso-two)" fill="#f3f5f7" font-size="20" font-family="system-ui, sans-serif">Build the system.</text>
+
+    <rect x="670" y="96" width="230" height="128" rx="16" fill="#111b24" stroke="#5ad7e8" stroke-width="2"/>
+    <path d="M718 165l42-42 26 26 56-56" fill="none" stroke="#5ad7e8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="842" cy="93" r="7" fill="#5ad7e8"/>
+    <text x="785" y="204" text-anchor="middle" clip-path="url(#pso-three)" fill="#f3f5f7" font-size="20" font-family="system-ui, sans-serif">Make it stay fixed.</text>
+  </g>
+  <path d="M290 160H365M595 160H670" stroke="url(#line)" stroke-width="3" stroke-dasharray="7 8"/>
+</svg>

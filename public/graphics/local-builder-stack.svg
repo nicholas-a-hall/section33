@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+  <title id="title">Local Builder system sketch</title>
+  <desc id="desc">A schematic connecting real-world equipment and people to sensors, software, automation, and useful outcomes.</desc>
+  <defs>
+    <clipPath id="lb-left1"><rect x="40" y="84" width="170" height="56" rx="12"/></clipPath>
+    <clipPath id="lb-left2"><rect x="40" y="162" width="170" height="56" rx="12"/></clipPath>
+    <clipPath id="lb-left3"><rect x="40" y="240" width="170" height="56" rx="12"/></clipPath>
+    <clipPath id="lb-left4"><rect x="40" y="318" width="170" height="56" rx="12"/></clipPath>
+    <clipPath id="lb-mid1"><rect x="286" y="108" width="188" height="70" rx="14"/></clipPath>
+    <clipPath id="lb-mid2"><rect x="286" y="214" width="188" height="70" rx="14"/></clipPath>
+    <clipPath id="lb-right1"><rect x="550" y="110" width="168" height="56" rx="12"/></clipPath>
+    <clipPath id="lb-right2"><rect x="550" y="202" width="168" height="56" rx="12"/></clipPath>
+    <clipPath id="lb-right3"><rect x="550" y="294" width="168" height="56" rx="12"/></clipPath>
+  </defs>
+  <rect width="760" height="420" rx="24" fill="#0b1117"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8593a0" letter-spacing="1.4">
+    <text x="44" y="46">REAL WORLD</text>
+    <text x="300" y="46">SECTION33</text>
+    <text x="594" y="46">USEFUL RESULT</text>
+  </g>
+  <g stroke="#34424f" fill="#111b24" stroke-width="1.5">
+    <rect x="40" y="84" width="170" height="56" rx="12"/><rect x="40" y="162" width="170" height="56" rx="12"/><rect x="40" y="240" width="170" height="56" rx="12"/><rect x="40" y="318" width="170" height="56" rx="12"/>
+    <rect x="286" y="108" width="188" height="70" rx="14" stroke="#f2b84b"/><rect x="286" y="214" width="188" height="70" rx="14" stroke="#f2b84b"/>
+    <rect x="550" y="110" width="168" height="56" rx="12" stroke="#5ad7e8"/><rect x="550" y="202" width="168" height="56" rx="12" stroke="#5ad7e8"/><rect x="550" y="294" width="168" height="56" rx="12" stroke="#5ad7e8"/>
+  </g>
+  <g font-family="system-ui, sans-serif" fill="#edf2f5" text-anchor="middle">
+    <text x="125" y="118" font-size="16.5" clip-path="url(#lb-left1)">People + workflow</text>
+    <text x="125" y="196" font-size="16.5" clip-path="url(#lb-left2)">Old equipment</text>
+    <text x="125" y="274" font-size="16.5" clip-path="url(#lb-left3)">Sensors + data</text>
+    <text x="125" y="345" font-size="15.5" clip-path="url(#lb-left4)"><tspan x="125" dy="0">Weird edge</tspan><tspan x="125" dy="18">cases</tspan></text>
+
+    <text x="380" y="137" font-size="17" clip-path="url(#lb-mid1)"><tspan x="380" dy="0">Software · AI</tspan><tspan x="380" dy="21">· IoT</tspan></text>
+    <text x="380" y="242" font-size="16.5" clip-path="url(#lb-mid2)"><tspan x="380" dy="0">Automation</tspan><tspan x="380" dy="21">+ integration</tspan></text>
+
+    <text x="634" y="144" font-size="15.5" clip-path="url(#lb-right1)">Less manual work</text>
+    <text x="634" y="236" font-size="16" clip-path="url(#lb-right2)">Earlier warning</text>
+    <text x="634" y="328" font-size="16" clip-path="url(#lb-right3)">Better decisions</text>
+  </g>
+  <g stroke="#f2b84b" stroke-width="2" fill="none" opacity=".85"><path d="M210 112H286M210 190L286 143M210 268L286 249M210 346L286 249"/></g>
+  <g stroke="#5ad7e8" stroke-width="2" fill="none" opacity=".9"><path d="M474 143L550 138M474 143L550 230M474 249L550 230M474 249L550 322"/></g>
+</svg>

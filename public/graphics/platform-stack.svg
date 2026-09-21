@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+  <title id="title">Platform engineering leverage sketch</title>
+  <desc id="desc">A layered diagram showing product teams using a common platform for delivery, reliability, observability, and cloud infrastructure.</desc>
+  <defs>
+    <clipPath id="ps-common"><rect x="94" y="190" width="572" height="108" rx="18"/></clipPath>
+    <clipPath id="ps-foundation"><rect x="132" y="338" width="496" height="44" rx="12"/></clipPath>
+  </defs>
+  <rect width="760" height="420" rx="24" fill="#0b1117"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8593a0" letter-spacing="1.4"><text x="44" y="46">PLATFORM LEVERAGE</text></g>
+  <g font-family="system-ui, sans-serif">
+    <rect x="70" y="82" width="150" height="54" rx="12" fill="#111b24" stroke="#5ad7e8" stroke-width="1.5"/><rect x="305" y="82" width="150" height="54" rx="12" fill="#111b24" stroke="#5ad7e8" stroke-width="1.5"/><rect x="540" y="82" width="150" height="54" rx="12" fill="#111b24" stroke="#5ad7e8" stroke-width="1.5"/>
+    <g fill="#edf2f5" font-size="17" text-anchor="middle"><text x="145" y="116">Product A</text><text x="380" y="116">Product B</text><text x="615" y="116">Product C</text></g>
+    <rect x="94" y="190" width="572" height="108" rx="18" fill="#111b24" stroke="#f2b84b" stroke-width="2"/>
+    <text x="380" y="224" text-anchor="middle" fill="#f2b84b" font-size="14.5" font-family="ui-monospace, monospace" letter-spacing="1.4" clip-path="url(#ps-common)">COMMON PLATFORM</text>
+    <g fill="#edf2f5" font-size="16" text-anchor="middle" clip-path="url(#ps-common)">
+      <text x="158" y="264">delivery</text>
+      <text x="303" y="264">observability</text>
+      <text x="447" y="264">reliability</text>
+      <text x="590" y="264">security</text>
+    </g>
+    <rect x="132" y="338" width="496" height="44" rx="12" fill="#111b24" stroke="#34424f" stroke-width="1.5"/>
+    <text x="380" y="366" text-anchor="middle" fill="#a6b1bb" font-size="15.5" clip-path="url(#ps-foundation)">cloud · kubernetes · data · network · edge</text>
+  </g>
+  <g stroke="#5ad7e8" stroke-width="2" opacity=".8"><path d="M145 136v54M380 136v54M615 136v54"/></g>
+  <g stroke="#f2b84b" stroke-width="2" opacity=".8"><path d="M380 298v40"/></g>
+</svg>

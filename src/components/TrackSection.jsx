@@ -1,18 +1,21 @@
+import { HeroVisual, ProjectVisual } from './VisualBlocks.jsx'
+
 export default function TrackSection({ track }) {
   return (
     <div className={`track-${track.key}`} id={track.key}>
       <section id="services">
         <div className="wrap">
           <div className="section-head">
-            <span className="hud-num">01 // SERVICES</span>
-            <h2>Sound familiar?</h2>
+            <span className="hud-num">01 // CAPABILITIES</span>
+            <h2>{track.key === 'enterprise' ? 'Where I usually find leverage' : 'What kind of problem is it?'}</h2>
           </div>
-          <div className="grid-auto">
-            {track.services.map((s) => (
-              <div className="panel card panel-tight" key={s.title}>
+          <div className="grid-auto service-grid">
+            {track.services.map((s, i) => (
+              <article className="panel card panel-tight service-card" key={s.title}>
+                <span className="service-index">{String(i + 1).padStart(2, '0')}</span>
                 <h3>{s.title}</h3>
                 <p>{s.body}</p>
-              </div>
+              </article>
             ))}
           </div>
         </div>
@@ -21,33 +24,35 @@ export default function TrackSection({ track }) {
       <section id="proof">
         <div className="wrap">
           <div className="section-head">
-            <span className="hud-num">02 // TRACK RECORD</span>
-            <h2>{track.key === 'enterprise' ? 'Not theory' : "What I've actually built"}</h2>
+            <span className="hud-num">02 // BUILT & SHIPPED</span>
+            <h2>{track.key === 'enterprise' ? 'Not theory' : "Things I've actually built"}</h2>
           </div>
-          <div className="proof-list">
+          <div className="proof-grid">
             {track.proof.map((p) => (
-              <div className="proof-item" key={p.title}>
+              <article className={`panel proof-card ${p.visual ? 'proof-card-featured' : ''}`} key={p.title}>
+                <ProjectVisual src={p.visual} alt={p.visual ? `${p.title} architecture sketch` : ''} />
                 <span className="proof-tag">{p.tag}</span>
-                <div>
-                  <h3>{p.title}</h3>
-                  <p>{p.body}</p>
-                  {p.link && (
-                    <a className="proof-link" href={p.link.href} target="_blank" rel="noopener">
-                      {p.link.label} &rarr;
-                    </a>
-                  )}
-                </div>
-              </div>
+                <h3>{p.title}</h3>
+                <p>{p.body}</p>
+                {(p.url || p.link?.href) && (
+                  <a className="proof-link" href={p.url || p.link.href} target="_blank" rel="noopener noreferrer">
+                    {p.linkLabel || p.link?.label || 'Open project →'}
+                  </a>
+                )}
+              </article>
             ))}
           </div>
         </div>
       </section>
 
       <section id="engagement">
-        <div className="wrap">
-          <div className="section-head">
-            <span className="hud-num">03 // ENGAGEMENT</span>
-            <h2>How it works</h2>
+        <div className="wrap engagement-layout">
+          <div>
+            <div className="section-head">
+              <span className="hud-num">03 // HOW I WORK</span>
+              <h2>{track.key === 'enterprise' ? 'Fix the pattern, not the symptom' : 'Start with the problem'}</h2>
+            </div>
+            <HeroVisual src={track.systemVisual} alt="Recurring pain becomes a reusable system and a better outcome" />
           </div>
           <div className="steps">
             {track.engagement.map((step, i) => (
@@ -81,7 +86,6 @@ export default function TrackSection({ track }) {
             <p className="section-sub">{track.pricing.intro}</p>
           </div>
           {track.pricing.note && <div className="pricing-note">{track.pricing.note}</div>}
-
           {track.pricing.groups ? (
             track.pricing.groups.map((group) => (
               <div className="pricing-group" key={group.label}>
@@ -90,9 +94,7 @@ export default function TrackSection({ track }) {
                 <div className="grid-auto">
                   {group.tiers.map((t) => (
                     <div className="panel price-card panel-tight" key={t.title}>
-                      <h3>{t.title}</h3>
-                      <p>{t.body}</p>
-                      <span className="price">{t.price}</span>
+                      <h3>{t.title}</h3><p>{t.body}</p><span className="price">{t.price}</span>
                     </div>
                   ))}
                 </div>
@@ -102,9 +104,7 @@ export default function TrackSection({ track }) {
             <div className="grid-auto">
               {track.pricing.tiers.map((t) => (
                 <div className="panel price-card panel-tight" key={t.title}>
-                  <h3>{t.title}</h3>
-                  <p>{t.body}</p>
-                  <span className="price">{t.price}</span>
+                  <h3>{t.title}</h3><p>{t.body}</p><span className="price">{t.price}</span>
                 </div>
               ))}
             </div>

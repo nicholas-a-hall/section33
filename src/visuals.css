@@ -1,0 +1,65 @@
+.s33-hero-visual,
+.s33-project-visual {
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 20px;
+  background: #0b1117;
+}
+
+.s33-hero-visual img,
+.s33-project-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.s33-hero-visual {
+  margin: 2rem 0 1rem;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.2);
+}
+
+.s33-project-visual {
+  margin: 0 0 1rem;
+}
+
+.s33-metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin: 1.5rem 0 3rem;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 16px;
+  background: rgba(148, 163, 184, 0.18);
+}
+
+.s33-metric {
+  min-width: 0;
+  padding: 1rem 1.1rem;
+  background: #0b1117;
+}
+
+.s33-metric strong,
+.s33-metric span {
+  display: block;
+}
+
+.s33-metric strong {
+  margin-bottom: 0.25rem;
+  font: 700 clamp(1.15rem, 2.1vw, 1.8rem)/1.1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  letter-spacing: -0.04em;
+}
+
+.s33-metric span {
+  color: rgba(226, 232, 240, 0.68);
+  font-size: 0.8rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 760px) {
+  .s33-metric-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

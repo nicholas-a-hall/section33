@@ -14,9 +14,18 @@ export const enterprise = {
   modeChip: 'MODE: FRACTIONAL SRE/DEVOPS',
   modeLabel: 'Enterprise',
   color: 'cyan',
+  heroVisual: '/graphics/platform-stack.svg',
+  heroVisualAlt: 'Product teams using a shared platform layer for delivery, observability, reliability, and security',
+  systemVisual: '/graphics/problem-system-outcome.svg',
+  stats: [
+    { value: '60 → 6 min', label: 'build + deploy feedback' },
+    { value: '20B/week', label: 'logs operated at scale' },
+    { value: '$4M/yr', label: 'cloud spend removed' },
+    { value: '1 wk → 30m', label: 'tenant setup' },
+  ],
   eyebrow: 'Fractional SRE / DevOps',
   heading: 'I find the platform problem underneath the operational symptoms.',
-  sub: "Slow delivery, noisy on-call, cloud spend, inconsistent environments, observability nobody trusts — those usually aren't separate problems. I've spent 21 years in production systems figuring out where the leverage is, then fixing the part that makes the next ten problems easier. I stay hands-on, but the goal is to leave you with a better system, not make myself indispensable.",
+  sub: "Slow delivery, noisy on-call, cloud spend, inconsistent environments, observability nobody trusts — those usually aren't separate problems. I find the leverage point, fix it hands-on, and leave behind a system the team can keep using without me.",
   heroCard: {
     title: 'For teams that outgrew the way they built it the first time',
     body: "Kubernetes, delivery, observability, reliability, cloud architecture, incident response — I work at the platform layer where recurring operational pain usually turns out to have a common cause.",
@@ -130,9 +139,18 @@ export const local = {
   modeChip: 'MODE: LOCAL BUILDER',
   modeLabel: 'Local',
   color: 'amber',
+  heroVisual: '/graphics/local-builder-stack.svg',
+  heroVisualAlt: 'Real-world people, equipment, and sensors connected to software, automation, and useful results',
+  systemVisual: '/graphics/problem-system-outcome.svg',
+  stats: [
+    { value: '21 yrs', label: 'building production systems' },
+    { value: '8 lanes', label: 'custom control + telemetry' },
+    { value: '3 counties', label: 'local service area' },
+    { value: '1 builder', label: 'problem to handoff' },
+  ],
   eyebrow: 'Nick Hall · Hillsboro, IL',
   heading: "I find the boring stuff eating your time. Then I build my way around it.",
-  sub: "I build software, electronics, automation, and practical AI tools for people around Macoupin, Montgomery, and Christian counties — Hillsboro, Litchfield, Carlinville, Taylorville, Gillespie, and everywhere in between. Bring me the problem, not a technology shopping list. I learn how the work actually happens, find the part worth fixing, then build the smallest thing that solves it properly. Sometimes that's software. Sometimes it's a sensor, a button, a better process, or telling you not to spend the money at all.",
+  sub: "I build software, electronics, automation, and practical AI around Macoupin, Montgomery, and Christian counties. Bring me the problem, not a technology shopping list. I'll learn how the work actually happens and build the smallest thing that solves it properly.",
   heroCard: {
     title: 'For businesses, farms, schools, churches & personal projects',
     body: "21 years building systems that have to work outside the demo. Now I use the same skill set closer to home. Not computer repair. Not a help desk. If your router needs rebooted, I'm probably not your guy. If something keeps wasting time, fails in an annoying way, or doesn't exist yet, that's much more interesting.",
@@ -173,6 +191,7 @@ export const local = {
     {
       tag: 'HARDWARE + SOFTWARE',
       title: 'OpenLaneLink',
+      visual: '/graphics/openlanelink-mini.svg',
       body: 'Built instead of buying a six-figure commercial replacement: a lane-management platform tying modern software to decades-old electromechanical bowling equipment. Per-lane failure boundaries, swappable edge hardware, live telemetry, and a wired fallback when wireless stops being useful.',
     },
     {
