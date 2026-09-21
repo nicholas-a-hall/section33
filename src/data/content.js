@@ -3,6 +3,7 @@ export const site = {
   email: 'nick@section33.io',
   github: 'https://github.com/nicholas-a-hall',
   linkedin: 'https://linkedin.com/in/nicholashall87',
+  portfolio: 'https://nicholas-a-hall.github.io',
 }
 
 export const enterprise = {
@@ -14,102 +15,102 @@ export const enterprise = {
   modeLabel: 'Enterprise',
   color: 'cyan',
   eyebrow: 'Fractional SRE / DevOps',
-  heading: 'Senior reliability engineering, without the full-time headcount.',
-  sub: "20+ years running production systems under real pressure — broadcast uptime, observability at 20 billion log lines a week, a SOC 2 audit passed in 4 hours. I embed part-time with platform and infra teams that need that judgment now, not after a 6-month hire.",
+  heading: 'I find the platform problem underneath the operational symptoms.',
+  sub: "Slow delivery, noisy on-call, cloud spend, inconsistent environments, observability nobody trusts — those usually aren't separate problems. I've spent 21 years in production systems figuring out where the leverage is, then fixing the part that makes the next ten problems easier. I stay hands-on, but the goal is to leave you with a better system, not make myself indispensable.",
   heroCard: {
-    title: 'For platform, infra & eng teams',
-    body: 'On-call load, reliability, CI/CD, and infrastructure — owned by someone who has carried the pager before, on a retainer that scales with what you actually need.',
+    title: 'For teams that outgrew the way they built it the first time',
+    body: "Kubernetes, delivery, observability, reliability, cloud architecture, incident response — I work at the platform layer where recurring operational pain usually turns out to have a common cause.",
   },
   contactCta: 'Talk about a retainer',
   contactSubject: 'Fractional SRE/DevOps inquiry',
   services: [
     {
-      title: 'On-call is burning your team out',
-      body: 'I take rotations, write runbooks that actually get followed, and fix the root cause instead of just clearing the page.',
+      title: 'Every deploy is its own adventure',
+      body: "If each service needs a different pipeline, release ritual, or infrastructure expert, the problem isn't the individual deploy. I build the common path underneath it so teams can ship without relearning production every time.",
     },
     {
-      title: 'Nobody owns reliability',
-      body: 'SLOs, error budgets, and a postmortem process with teeth — changes get made, not just written down.',
+      title: 'On-call is a symptom, not the system',
+      body: "I'll help carry the pager when that is useful, but the real work is finding why the same classes of incidents keep coming back: ownership gaps, bad signals, fragile dependencies, missing automation, or architecture that stopped scaling.",
     },
     {
-      title: 'Infra outgrew the docs',
-      body: 'Infrastructure as code, reproducible environments, and a migration plan that doesn’t require a maintenance window nobody wants.',
+      title: 'Nobody trusts the observability',
+      body: "More dashboards won't fix that. I work backward from the decisions engineers actually need to make, then wire metrics, logs, traces, alerts, and incident context around those questions.",
     },
     {
-      title: 'Dashboards nobody trusts',
-      body: 'Metrics, logs, and traces wired to alerts that mean something. Built this exact thing at 20 billion log entries a week.',
+      title: 'Cloud cost grew faster than the product',
+      body: "Cost is an architecture signal. I look at what the system is buying you, where the waste actually comes from, and what can change without quietly trading away reliability.",
     },
     {
-      title: 'A compliance deadline is coming',
-      body: 'Passed a SOC 2 Type II audit in 4 hours against a 3-day window. I can get your controls audit-ready without freezing the roadmap.',
+      title: 'Compliance exposed all the hidden assumptions',
+      body: "SOC 2 and security work are useful when the controls become real engineering practices instead of audit theater. I led the engineering side of a SOC 2 Type I effort and completed the audit itself in roughly four hours against a three-day window.",
     },
   ],
   proof: [
     {
-      tag: 'BROADCAST',
-      title: 'Kept a TV station on air',
-      body: 'IT Manager for a broadcast operation — uptime with no room for "we’ll fix it Monday."',
+      tag: 'DELIVERY',
+      title: '60 minutes → 6',
+      body: 'At Formant, rebuilt the delivery path around reusable Helm foundations and repeatable GitOps workflows, cutting build and deployment feedback from roughly an hour to six minutes.',
     },
     {
-      tag: 'SCALE',
-      title: 'Observability at 20B log lines/week',
-      body: 'Built the logging and monitoring platform underneath that volume — the alerts people actually trusted.',
+      tag: 'PLATFORM',
+      title: '1 week → 30 minutes',
+      body: 'At FORT Robotics, built 25 reusable Helm charts that turned new-tenant setup from roughly a week into about 30 minutes; platform changes also improved deployment/recovery time by 83% and RTO by 87%.',
+    },
+    {
+      tag: 'SCALE + COST',
+      title: '20B logs/week · $4M/year',
+      body: 'At Paramount+, operated Elasticsearch on Kubernetes at roughly 20 billion log entries per week and made the cost-versus-reliability call that cut about $4M/year in GCP spend without giving up the observability we needed.',
+    },
+    {
+      tag: 'SAAS',
+      title: 'Graylog Cloud through GA',
+      body: 'Helped build the AWS platform behind Graylog Cloud through SOC 2, beta, and general availability, including production-scale load testing at roughly 200,000 logging requests per second.',
     },
     {
       tag: 'COMPLIANCE',
-      title: 'SOC 2 Type II in 4 hours',
-      body: 'Audit window was 3 days. Controls were ready; the audit itself took an afternoon.',
-    },
-    {
-      tag: 'STARTUP',
-      title: 'Solo platform lead',
-      body: 'Owned infra, on-call, and reliability for a startup platform team of one — me.',
-    },
-    {
-      tag: 'MILITARY',
-      title: 'U.S. Army veteran',
-      body: 'Military intelligence systems. Mission tempo, real constraints, no do-overs.',
+      title: 'SOC 2 Type I',
+      body: 'At Growth Protocol, led the engineering work behind SOC 2 Type I: technical controls, remediation, evidence, and audit execution. The audit itself completed in roughly four hours against a planned three-day window.',
     },
   ],
   engagement: [
     {
-      title: 'Scope call',
-      body: '30 minutes, no charge. What’s actually breaking, what’s actually urgent, and whether I’m the right fit.',
+      title: 'Start with the symptoms',
+      body: "30 minutes, no charge. Tell me what hurts: deploys, incidents, cloud spend, customer environments, compliance, observability, or the one engineer everybody depends on.",
     },
     {
-      title: 'Reliability assessment',
-      body: 'I look at your incidents, your on-call load, and your architecture before proposing anything — not a generic package.',
+      title: 'Find the leverage point',
+      body: "I look at the architecture, operating history, team boundaries, and actual failure patterns before proposing a fix. The request and the root problem are not always the same thing.",
     },
     {
-      title: 'Pick the engagement',
-      body: 'Audit, embedded retainer, or on-call coverage. They ask different things of me, so they’re priced differently.',
+      title: 'Fix the system, not just the ticket',
+      body: "The useful answer is usually a platform capability, a common path, a better boundary, or an operating model the rest of the team can reuse — not another pile of one-off automation.",
     },
     {
-      title: 'Start month-to-month',
-      body: 'Defined scope, 30 days’ notice to change or end it. No multi-year lock-in.',
+      title: 'Stay hands-on',
+      body: "I'll write the design, build the reference implementation, debug production, and work alongside the team. Staff-level does not mean PowerPoint-only.",
     },
     {
-      title: 'You keep everything',
-      body: 'Runbooks, IaC, dashboards, docs — all yours. No walled garden once the retainer ends.',
+      title: 'Leave it better than I found it',
+      body: "Runbooks, IaC, dashboards, architecture notes, and the reasoning behind the decisions stay with you. The work should become easier to operate after I leave, not harder.",
     },
   ],
   pricing: {
-    intro: "Fractional work is priced by how much of my week it takes, not by the hour — same logic as hiring part-time, just senior. Numbers below are proposed market-rate starting points; final scope and price are set after the reliability assessment.",
+    intro: "Fractional work is priced by the amount of sustained responsibility I am taking on, not by counting individual tickets. The point is to fix the platform problems creating repeated work in the first place. Numbers below are starting points; final scope and price follow the assessment.",
     note: 'Proposed rates — confirm before quoting a client.',
     tiers: [
       {
         title: 'Reliability Audit',
-        body: 'One-time architecture and incident review. Prioritized fix list, SLO recommendations, no ongoing commitment.',
+        body: 'One-time architecture and operating review. I map the recurring pain back to platform, ownership, reliability, delivery, and observability problems, then leave you with a prioritized path forward.',
         price: '$8,000–$15,000 · 2–4 weeks',
       },
       {
         title: 'Embedded Retainer',
-        body: '1–2 days/week. On-call rotation, IaC, CI/CD, and ongoing reliability work as a standing part of your team.',
+        body: '1–2 days/week. Hands-on platform work, architecture, delivery, reliability, observability, and incident follow-through as a standing part of the team.',
         price: '$7,500–$12,000/mo',
       },
       {
         title: 'Platform Retainer',
-        body: '3+ days/week. Acting SRE/DevOps lead — incident command, roadmap ownership, the works.',
+        body: '3+ days/week. Acting platform/SRE technical lead: architecture, roadmap, implementation, incident command, and the work needed to make recurring problems stop recurring.',
         price: '$16,000–$24,000/mo',
       },
       {
@@ -131,33 +132,37 @@ export const local = {
   color: 'amber',
   eyebrow: 'Nick Hall · Hillsboro, IL',
   heading: "I find the boring stuff eating your time. Then I build my way around it.",
-  sub: "I build software, electronics, automation, and practical AI tools for people around Macoupin, Montgomery, and Christian counties — Hillsboro, Litchfield, Carlinville, Taylorville, Gillespie, and everywhere in between. Sometimes it's a business process wasting three hours every Friday. Sometimes it's a barn you need to keep an eye on. Sometimes you want Home Assistant running the house, a custom arcade in the basement, or some weird electronic thing that doesn't exist yet. Tell me what you're trying to accomplish. I'll tell you whether technology can actually make it better, what it'll cost, and whether I think it's worth doing before you spend anything.",
+  sub: "I build software, electronics, automation, and practical AI tools for people around Macoupin, Montgomery, and Christian counties — Hillsboro, Litchfield, Carlinville, Taylorville, Gillespie, and everywhere in between. Bring me the problem, not a technology shopping list. I learn how the work actually happens, find the part worth fixing, then build the smallest thing that solves it properly. Sometimes that's software. Sometimes it's a sensor, a button, a better process, or telling you not to spend the money at all.",
   heroCard: {
-    title: 'For businesses, farms, schools, churches & weird projects',
-    body: "20+ years building systems for large companies. Now I use the same skill set closer to home. Not computer repair. Not a help desk. If your router needs rebooted, I'm probably not your guy. If you want something built, though, keep reading.",
+    title: 'For businesses, farms, schools, churches & personal projects',
+    body: "21 years building systems that have to work outside the demo. Now I use the same skill set closer to home. Not computer repair. Not a help desk. If your router needs rebooted, I'm probably not your guy. If something keeps wasting time, fails in an annoying way, or doesn't exist yet, that's much more interesting.",
   },
   contactCta: 'Tell me what you want to solve or build',
   contactSubject: 'Local project inquiry',
   services: [
     {
       title: "You're still doing it by hand",
-      body: "A spreadsheet, a notebook, a clipboard, a whiteboard, or some process only one person understands. I build the small tool that handles the repetitive part so you don't have to.",
+      body: "A spreadsheet, notebook, clipboard, whiteboard, or process only one person understands. I look for the repeated part and build around that, instead of turning the whole business into a software project.",
+    },
+    {
+      title: 'You keep solving the same problem over and over',
+      body: "If the same mistake, delay, handoff, or workaround keeps coming back, I don't want to patch it for the tenth time. I want to find the common cause and make the next ten instances easier.",
     },
     {
       title: "Nobody answers when you're slammed",
-      body: 'An AI phone assistant can handle common questions, bookings, and basic intake, then hand the call to a real person when it should. Built around your business, not somebody else’s script.',
+      body: "An AI phone assistant can handle common questions, bookings, and basic intake, then hand the call to a real person when it should. The point isn't AI. The point is fewer missed calls and less time repeating the same answers.",
     },
     {
       title: "You need eyes on something when you're not there",
       body: 'Temperature, water, doors, equipment, pumps, freezers, buildings — whatever matters. Sensors, alerts, dashboards, and automation that tell you something is wrong before it becomes expensive.',
     },
     {
-      title: 'The stream needs a babysitter',
-      body: 'Church service, ballgame, school event, meeting, performance. I build audio and streaming setups that normal people can operate without becoming part-time broadcast engineers.',
+      title: 'It works until something weird happens',
+      body: "Power drops. Wi-Fi disappears. A sensor dies. Somebody presses the wrong button. Old equipment does something nobody documented. I try to design that path too, because that's usually when you actually need the system.",
     },
     {
       title: 'You want the house to actually be smart',
-      body: 'Home Assistant, dashboards, sensors, automations, lighting, buttons, and weird integrations — built around how you live instead of whichever ecosystem a manufacturer is trying to lock you into.',
+      body: 'Home Assistant, dashboards, sensors, automations, lighting, buttons, and weird integrations — built around how you actually live instead of whichever ecosystem a manufacturer is trying to lock you into.',
     },
     {
       title: "You've got a project nobody else seems to do",
@@ -168,53 +173,67 @@ export const local = {
     {
       tag: 'HARDWARE + SOFTWARE',
       title: 'OpenLaneLink',
-      body: 'A custom real-time lane-management platform for an 8-lane bowling center: sensors on every lane, lane controls, kiosk displays, reservation integration, and custom software tying decades-old equipment into a modern system.',
+      body: 'Built instead of buying a six-figure commercial replacement: a lane-management platform tying modern software to decades-old electromechanical bowling equipment. Per-lane failure boundaries, swappable edge hardware, live telemetry, and a wired fallback when wireless stops being useful.',
+    },
+    {
+      tag: 'WORKFLOW + ANALYTICS',
+      title: 'Quarry',
+      body: "I got tired of treating a job search like a pile of browser tabs and spreadsheets, so I built the system I wanted: application tracking, funnel analytics, stale-lead detection, and source/category conversion — all kept in the browser without an unnecessary backend.",
+      url: 'https://nicholas-a-hall.github.io/quarry',
+      linkLabel: 'Open Quarry →',
+    },
+    {
+      tag: 'DATA + VISUALIZATION',
+      title: 'Econ Tracker',
+      body: "I wanted a better way to inspect long-term economic claims than swapping isolated charts, so I built an interactive timeline that puts decades of U.S. economic indicators, major events, and context in one place.",
+      url: 'https://nicholas-a-hall.github.io/econ-tracker',
+      linkLabel: 'Explore Econ Tracker →',
     },
     {
       tag: 'DASHBOARD',
       title: 'ScoreDash',
-      body: 'Live scores, strikes, player stats, ball speed, and game state on screens around the building — pulled directly from the lane system with no manual updates.',
+      body: 'Live scores, strikes, player stats, ball speed, and game state pulled from the same event stream already running the lanes. One source of truth instead of another screen somebody has to update by hand.',
     },
     {
       tag: 'AI VOICE',
       title: 'Theia & Rook',
-      body: "Theia answers a business's phone, handles common questions and booking conversations, and knows when a person needs to take over. Rook is my personal version — built for me first, using the same pattern.",
+      body: "Theia handled the repetitive phone traffic for a real local business: hours, pricing, common questions, and booking conversations, with clear handoff points where a person should take over. Rook is my personal version of the same pattern.",
     },
     {
-      tag: 'COMMUNITY SOFTWARE',
+      tag: 'COMMUNITY',
       title: 'Backfence',
-      body: "A local directory built one town at a time — Hillsboro first — for finding who around here does what: who plows driveways, who fixes mowers, who's got eggs for sale, and the other things everybody knows somebody knows.",
+      body: "A local directory built around a very small-town problem: useful information exists, but it lives in people's heads and Facebook comments. The goal is one town at a time, starting with Hillsboro.",
     },
   ],
   engagement: [
     {
-      title: 'Start with a conversation',
-      body: "For business and organization projects, the first conversation is free. Tell me what's frustrating you, what you're doing now, or what you wish existed instead. You don't need the technical words for it.",
+      title: 'Start with the problem',
+      body: "For business and organization projects, the first conversation is free. Tell me what is frustrating you, costing you time, or what you wish worked differently. You do not need to know what technology you need.",
     },
     {
-      title: 'I learn how it works today',
-      body: 'Before I build anything, I need to understand the actual problem — the process, the equipment, the people using it, and where the time or money is really disappearing.',
+      title: 'I learn how it really works',
+      body: "I want to see the process where it actually happens — the people, equipment, shortcuts, exceptions, and weird edge cases that never make it into a requirements document.",
     },
     {
-      title: "I tell you whether it's worth doing",
-      body: "Sometimes the answer is custom software. Sometimes it's a $40 sensor, an existing app, or doing absolutely nothing. If I don't think the project will meaningfully save you time, money, or aggravation, I'll tell you before we build it.",
+      title: 'I find the leverage point',
+      body: "The thing you asked for and the thing worth fixing are not always the same. Sometimes the right answer is custom software. Sometimes it's a $40 sensor, an existing product, a changed process, or doing nothing.",
     },
     {
-      title: 'You get a clear price',
-      body: "For defined work, I prefer fixed quotes. You'll know what I'm building, what it costs, what's included, and what isn't. Hardware, hosting, API usage, and other third-party costs stay separate so you can see exactly what you're paying for.",
+      title: 'I build for real life',
+      body: "I think about what happens when the internet drops, hardware dies, somebody uses it wrong, or the old machine does something strange. The happy path is only half the design.",
     },
     {
-      title: 'You decide what happens afterward',
-      body: 'I can hand it over, host and maintain it, keep the underlying design reusable, make it locally exclusive, or transfer full ownership. We decide that before the project starts — no surprise lock-in later.',
+      title: 'You get a clear price and a way out',
+      body: "For defined work, I prefer fixed quotes. You'll know what I'm building, what it costs, what is included, and what happens afterward. I can hand it over, host it, maintain it, make it locally exclusive, or transfer full ownership.",
       ownership: [
-        { title: 'Reusable', body: 'Default for most projects. You get the finished solution; I can reuse general building blocks and ideas elsewhere.' },
+        { title: 'Reusable', body: 'Default for most projects. You get the finished solution and documentation; I can reuse general building blocks and ideas elsewhere.' },
         { title: 'Local exclusive', body: "I won't build the same solution for a nearby competitor. Quoted case by case." },
         { title: 'Full ownership', body: 'The custom work is entirely yours and I give up reuse rights. Premium, because you are buying the work itself.' },
       ],
     },
   ],
   pricing: {
-    intro: "Small-town projects should have small-business-sized prices. I keep overhead low and scope projects tightly so useful technology doesn't automatically become a five-figure consulting engagement. The numbers below are realistic starting points, not promises before I've seen the job. Parts, hardware, hosting, APIs, and other third-party costs are separate and billed at actual cost.",
+    intro: "Small-town projects should have small-business-sized prices. I keep overhead low and try to solve the smallest useful version of the problem instead of selling hours for their own sake. The numbers below are realistic starting points, not promises before I've seen the job. Parts, hardware, hosting, APIs, and other third-party costs are separate and billed at actual cost.",
     note: "If it doesn't fit a box below, that's fine. Tell me what you want it to do and I'll quote the work before I start.",
     groups: [
       {
@@ -354,13 +373,13 @@ export const faq = [
   {
     track: 'both',
     q: "Who's actually doing the work?",
-    a: "Me — Nick Hall. 21 years in systems and platform engineering, most of it under real pressure. My job has always been walking into systems I didn't design, learning how they actually work, and making them better — whether that's a production platform, a phone agent, or a bowling lane.",
+    a: "Me — Nick Hall. I've spent 21 years walking into systems I didn't design, figuring out how they actually work, and improving the part with the most leverage. Sometimes that is a Kubernetes platform. Sometimes it is a sensor, a phone agent, or a bowling lane.",
     list: [
-      'Kept a TV station on air as IT Manager',
-      'Built observability for a platform handling 20 billion log entries a week',
-      'Passed a SOC 2 audit in 4 hours against a 3-day window',
+      'Cut delivery feedback from roughly 60 minutes to 6 at Formant',
+      'Operated observability at roughly 20 billion log entries a week and cut about $4M/year in cloud spend at Paramount+',
+      'Improved deployment/recovery time 83% and reduced tenant setup from roughly one week to 30 minutes at FORT Robotics',
+      'Led the engineering work behind SOC 2 Type I at Growth Protocol; the audit itself completed in roughly four hours',
       'Built and operated an 8-lane bowling center on custom hardware and software',
-      'U.S. Army veteran, military intelligence systems',
     ],
   },
   {
@@ -371,7 +390,7 @@ export const faq = [
   {
     track: 'enterprise',
     q: 'How is this different from hiring an SRE?',
-    a: 'Fractional cost, senior judgment from day one, no ramp-up, no benefits overhead — and it scales down the month you don’t need it.',
+    a: "You are not hiring me to become another ticket queue. I come in at the platform layer, find the recurring problem underneath the symptoms, build the path out, and leave the architecture, code, runbooks, and reasoning with your team. The engagement can scale down when the work does.",
   },
   {
     track: 'enterprise',
@@ -381,12 +400,12 @@ export const faq = [
   {
     track: 'enterprise',
     q: 'What size company is this for?',
-    a: 'Teams running production systems with no dedicated SRE/DevOps function yet — or one person doing it as a second job on top of everything else.',
+    a: 'Usually teams where delivery, reliability, observability, cloud cost, or incident response has become a shared pain but nobody has enough leverage or time to fix the system underneath it. That can be a startup with no platform function yet or a larger team whose platform has outgrown its first design.',
   },
   {
     track: 'local',
     q: 'How does this start?',
-    a: "Tell me what you're trying to accomplish, what's eating your time, or what you wish existed. I'll figure out whether the answer is software, electronics, automation, AI, something off the shelf, or nothing at all. Business project discovery is free.",
+    a: "Bring me the problem, not a technology shopping list. Tell me what keeps wasting time, failing, getting repeated, or what you wish existed. I'll learn how it works today, find the part worth fixing, and tell you whether the answer is software, electronics, automation, AI, something off the shelf, a process change, or nothing at all. Business project discovery is free.",
   },
   {
     track: 'local',
@@ -396,7 +415,7 @@ export const faq = [
   {
     track: 'local',
     q: 'What do you actually build?',
-    a: "Useful things that don't fit neatly into a computer-repair shop. One week that might be a sensor and dashboard for a building. The next it might be Home Assistant, an AI phone agent, a custom arcade, or a small app that replaces three hours of paperwork.",
+    a: "Useful things that don't fit neatly into a computer-repair shop. One week that might be a sensor and dashboard for a building. The next it might be Home Assistant, an AI phone agent, a custom arcade, or a small app that removes three hours of repeated work.",
     list: [
       'Automation & small software tools',
       'AI tools & phone agents',
@@ -416,22 +435,27 @@ export const faq = [
   },
   {
     track: 'local',
+    q: 'Can I just pay you for advice before I buy or build something?',
+    a: "Yes. That's what the technology consultation is for. Bring me the idea, shopping list, system, or project you're considering and I'll help you figure out what actually makes sense. If I end up building the project, I credit the consultation toward the work.",
+  },
+  {
+    track: 'local',
     q: 'Is this computer repair, or general IT support?',
     a: "No. I don't want to be your outsourced help desk, and I'm probably not the person to call for a slow laptop, virus cleanup, printer trouble, password resets, or routine router and Wi-Fi support. Section33 is for building, integrating, automating, and figuring out unusual technology problems.",
   },
   {
     track: 'local',
     q: 'Am I locked into you after you build it?',
-    a: "No. I strongly prefer building things that can survive without me. If you want ongoing hosting or maintenance, I can provide it. If you want the keys and documentation and never want to call me again, that's fine too. Ownership and reuse rights are agreed before work starts.",
+    a: "No. I strongly prefer building things that can survive without me. If you want ongoing hosting or maintenance, I can provide it. If you want the keys, wiring diagram, source, and documentation and never want to call me again, that's fine too. Ownership and reuse rights are agreed before work starts.",
   },
 ]
 
 export const contact = {
-  heading: 'Start a conversation',
-  sub: "No pitch deck. Tell me what you're trying to solve or build.",
+  heading: 'Start with the problem',
+  sub: "No pitch deck. Tell me what keeps wasting time, breaking, getting repeated, or what you wish existed. I'll help figure out what is actually worth fixing.",
 }
 
 export const footer = {
   left: 'Section33 · Hillsboro, IL',
-  right: 'Practical engineering for production systems, local problems, and weird ideas.',
+  right: 'Bring me the problem. I’ll build the tool.',
 }
