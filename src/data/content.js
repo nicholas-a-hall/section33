@@ -256,6 +256,43 @@ export const local = {
     note: "If it doesn't fit a box below, that's fine. Tell me what you want it to do and I'll quote the work before I start.",
     groups: [
       {
+        label: 'Advice & consulting',
+        blurb: "Sometimes you don't need me to build anything. You just need somebody technical to look at the problem and tell you what makes sense.",
+        tiers: [
+          {
+            title: 'Technology consultation',
+            body: 'Up to one hour to talk through a personal project, purchase, system, automation idea, or technical problem. If you hire me for the project afterward, I credit this toward the work.',
+            price: '$75',
+          },
+          {
+            title: 'Hourly',
+            body: 'For hands-on work that does not make sense as a fixed project. Business project discovery and estimates are still free.',
+            price: '$85/hr + parts/software as needed',
+          },
+          {
+            title: 'Monthly',
+            body: 'A standing block for organizations that regularly have small software, automation, electronics, or technology jobs.',
+            price: '$280/mo for 4 hours · extra hours at $75/hr',
+          },
+          {
+            title: 'One-off project day',
+            body: 'A defined block of hands-on work when you would rather buy the time as one number than watch a running clock.',
+            price: '$350 half-day · $600 full day',
+          },
+        ],
+      },
+      {
+        label: 'Community work',
+        blurb: 'Some projects matter more than the margin. This is a deliberately subsidized rate for genuinely community-focused work.',
+        tiers: [
+          {
+            title: 'Schools, churches & nonprofits',
+            body: 'Reduced-rate engineering for schools, churches, nonprofits, civic groups, and similar community projects. Hardware and software stay at actual cost.',
+            price: '$35/hr labor + parts/software at cost',
+          },
+        ],
+      },
+      {
         label: 'Common projects',
         blurb: 'Things I see often enough that I can give you a useful starting point before we talk.',
         tiers: [
@@ -346,44 +383,7 @@ export const local = {
             price: 'Premium · quoted by project',
           },
         ],
-      },
-      {
-        label: 'Advice & consulting',
-        blurb: "Sometimes you don't need me to build anything. You just need somebody technical to look at the problem and tell you what makes sense.",
-        tiers: [
-          {
-            title: 'Technology consultation',
-            body: 'Up to one hour to talk through a personal project, purchase, system, automation idea, or technical problem. If you hire me for the project afterward, I credit this toward the work.',
-            price: '$75',
-          },
-          {
-            title: 'Hourly',
-            body: 'For hands-on work that does not make sense as a fixed project. Business project discovery and estimates are still free.',
-            price: '$85/hr + parts/software as needed',
-          },
-          {
-            title: 'Monthly',
-            body: 'A standing block for organizations that regularly have small software, automation, electronics, or technology jobs.',
-            price: '$280/mo for 4 hours · extra hours at $75/hr',
-          },
-          {
-            title: 'One-off project day',
-            body: 'A defined block of hands-on work when you would rather buy the time as one number than watch a running clock.',
-            price: '$350 half-day · $600 full day',
-          },
-        ],
-      },
-      {
-        label: 'Community work',
-        blurb: 'Some projects matter more than the margin. This is a deliberately subsidized rate for genuinely community-focused work.',
-        tiers: [
-          {
-            title: 'Schools, churches & nonprofits',
-            body: 'Reduced-rate engineering for schools, churches, nonprofits, civic groups, and similar community projects. Hardware and software stay at actual cost.',
-            price: '$35/hr labor + parts/software at cost',
-          },
-        ],
-      },
+      }
     ],
   },
 }
